@@ -17,9 +17,9 @@ import {
   TableHead,
   TableRow,
   TextField,
-  Typography,
 } from '@mui/material'
 import AddIcon from '@mui/icons-material/Add'
+import PageHeader from '../components/PageHeader.jsx'
 import client from '../api/client.js'
 
 function Teachers() {
@@ -75,7 +75,11 @@ function Teachers() {
   return (
     <Box>
       <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 3 }}>
-        <Typography variant="h5">Professores</Typography>
+        <PageHeader
+          title="Professores"
+          description="Cadastro e gerenciamento dos professores."
+          sx={{ mb: 0 }}
+        />
         <Button variant="contained" startIcon={<AddIcon />} onClick={openDialog}>
           Novo professor
         </Button>

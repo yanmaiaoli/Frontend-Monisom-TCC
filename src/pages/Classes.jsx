@@ -19,10 +19,10 @@ import {
   TableHead,
   TableRow,
   TextField,
-  Typography,
 } from '@mui/material'
 import AddIcon from '@mui/icons-material/Add'
 import EditIcon from '@mui/icons-material/Edit'
+import PageHeader from '../components/PageHeader.jsx'
 import client from '../api/client.js'
 
 const TURNOS = [
@@ -107,7 +107,7 @@ function Classes() {
   return (
     <Box>
       <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 3 }}>
-        <Typography variant="h5">Turmas</Typography>
+        <PageHeader title="Turmas" description="Cadastro e gerenciamento das turmas." sx={{ mb: 0 }} />
         <Button variant="contained" startIcon={<AddIcon />} onClick={openCreate}>
           Nova turma
         </Button>

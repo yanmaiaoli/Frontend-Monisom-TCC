@@ -16,6 +16,7 @@ import {
   TextField,
   Typography,
 } from '@mui/material'
+import PageHeader from '../components/PageHeader.jsx'
 import client from '../api/client.js'
 
 function Allocations() {
@@ -95,9 +96,7 @@ function Allocations() {
 
   return (
     <Box>
-      <Typography variant="h5" sx={{ mb: 3 }}>
-        Lotação
-      </Typography>
+      <PageHeader title="Lotação" description="Vinculação de professores às turmas." />
 
       <TextField
         select

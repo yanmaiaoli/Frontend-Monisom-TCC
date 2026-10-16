@@ -18,12 +18,18 @@ import MenuIcon from '@mui/icons-material/Menu'
 import PeopleIcon from '@mui/icons-material/People'
 import ClassIcon from '@mui/icons-material/Class'
 import AssignmentIndIcon from '@mui/icons-material/AssignmentInd'
+import SensorsIcon from '@mui/icons-material/Sensors'
+import HistoryIcon from '@mui/icons-material/History'
+import BarChartIcon from '@mui/icons-material/BarChart'
 import LogoutIcon from '@mui/icons-material/Logout'
 import { useAuth } from '../context/AuthContext.jsx'
 
 const drawerWidth = 240
 
 const menu = [
+  { text: 'Monitoramento', path: '/monitoramento', icon: <SensorsIcon /> },
+  { text: 'Monitoramentos', path: '/monitoramentos', icon: <HistoryIcon /> },
+  { text: 'Indicadores', path: '/indicadores', icon: <BarChartIcon /> },
   { text: 'Professores', path: '/professores', icon: <PeopleIcon /> },
   { text: 'Turmas', path: '/turmas', icon: <ClassIcon /> },
   { text: 'Lotação', path: '/lotacao', icon: <AssignmentIndIcon /> },
